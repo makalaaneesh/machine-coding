@@ -18,17 +18,6 @@ Details:
 12. Fetch history of all rides taken by a rider.
 13. End the Trip
 
-Expectation from this round
-
-1. Demonstrable code is first expectation. To do this, you can choose any interface you
-   are comfortable with - CLI, WebApp, MobileApp, APIs or even simply run the code
-   via Tests or a main method.
-2. Code should be extensible.
-3. Clean professional level code.
-4. Functional Completeness including good modelling.
-5. User Identification but not authentication.
-6. Backend Database is optional. However modelling should be complete.
-
 TO INSTALL AND RUN APP
 
 1. npm install
