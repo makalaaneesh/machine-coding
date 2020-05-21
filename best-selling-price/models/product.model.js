@@ -6,8 +6,11 @@ let ProductSchema = new Schema({
   name: { type: String, required: true, max: 100 },
   price: { type: Number, required: true },
   category_id: { type: String, required: true },
-  buyer_list: { type: [String] },
-  blacklisted_users: { type: [String] },
+  buys: {
+    type: Map,
+    of: Number,
+  },
+  blacklisted_users: { type: [Array] },
 });
 
 //Export the model
