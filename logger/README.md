@@ -1,0 +1,25 @@
+- Requirements
+    - Design a logging library that exposes methods for writing logs at different log levels (info, warn, error)
+    - All logs that belong to a level higher or equal to the configured log level will be output. For example, if configured log level is warn, warn and error logs will be output. If log level is error, only error will be output.
+    - Logging level can be output to multiple locations. For example, one output can be file, the other can be elasticsearch.
+    - Upon start of program, user can invoke the logging library to instantiate it and set the log level and the output. Multiple combinations of log, outputs can be set.
+    - Potential Extensions
+        - Another log level
+        - User should be able to specify log format
+- Code Design
+    - Entities
+        - Text 
+            - Actual text that has to be output
+        - Output 
+            - The destination of the log text
+        - Log Level
+            - Corresponding to info/warn/error
+        - Config
+            - Encapsulation of Log Level, Output.
+        - Logger
+            - Main class that will expose config, logging methods.
+- Discussion on Design Considerations
+    - What it means to add another log level?
+    - What it means to feature-add format for log texts?
+    - Factory Pattern for Output
+    - Singleton Pattern for Logger
